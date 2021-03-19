@@ -44,4 +44,5 @@
     <string name="activity_authentication_button_login">Login</string>
     <string name="auth_user_not_found">The authentication details provided are not in the system</string>
     <string name="error_could_not_log_out">Could not log out user</string>
+    <string name="btn_save">SAVE</string>
 </resources>
