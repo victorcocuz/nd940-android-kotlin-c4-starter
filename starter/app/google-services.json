@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "615430449346",
+    "project_id": "kotlin-location-reminder-app",
+    "storage_bucket": "kotlin-location-reminder-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615430449346:android:95cd7f06da6744da0df35b",
+        "android_client_info": {
+          "package_name": "com.udacity.project4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615430449346-8iv98cv319om76habur0554sgimspl2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udacity.project4",
+            "certificate_hash": "72161f117b868d76f2b766426751b9dce60cad1a"
+          }
+        },
+        {
+          "client_id": "615430449346-q7129lp7fud37a7uv97tk9odd93c7att.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCglPVyilmkhtLWNnT88Ab3ci-HfZlz2Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615430449346-q7129lp7fud37a7uv97tk9odd93c7att.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

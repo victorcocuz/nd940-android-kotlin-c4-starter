@@ -1,6 +1,6 @@
 package com.udacity.project4
 
-import android.app.Application
+import androidx.multidex.MultiDexApplication
 import com.udacity.project4.locationreminders.data.ReminderDataSource
 import com.udacity.project4.locationreminders.data.local.LocalDB
 import com.udacity.project4.locationreminders.data.local.RemindersLocalRepository
@@ -10,8 +10,9 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.context.startKoin
 import org.koin.dsl.module
+import timber.log.Timber
 
-class MyApp : Application() {
+class MyApp : MultiDexApplication() {
 
     override fun onCreate() {
         super.onCreate()
@@ -43,5 +44,7 @@ class MyApp : Application() {
             androidContext(this@MyApp)
             modules(listOf(myModule))
         }
+
+        Timber.plant(Timber.DebugTree())
     }
 }
