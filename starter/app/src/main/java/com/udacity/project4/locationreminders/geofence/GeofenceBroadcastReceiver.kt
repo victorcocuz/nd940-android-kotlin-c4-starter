@@ -19,29 +19,8 @@ class GeofenceBroadcastReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
 
         if (intent.action == ACTION_GEOFENCE_EVENT) {
-//            val geofencingEvent = GeofencingEvent.fromIntent(intent)
-//
-//            if (geofencingEvent.hasError()) {
-//                val errorMessage = errorMessage(context, geofencingEvent.errorCode)
-//                Timber.e("$errorMessage")
-//                return
-//            }
-//
-//            if (geofencingEvent.geofenceTransition == Geofence.GEOFENCE_TRANSITION_ENTER) {
-//                Timber.v("$context.getString(R.string.geofence_entered)")
-//                val fenceId = when {
-//                    geofencingEvent.triggeringGeofences.isNotEmpty() ->
-//                        geofencingEvent.triggeringGeofences[0].requestId
-//                    else -> {
-//                        Timber.e("No Geofence Trigger Found! Abort mission!")
-//                        return
-//                    }
-//                }
-
                 GeofenceTransitionsJobIntentService.enqueueWork(context, intent)
-//            }
         }
-
     }
 
 //    private fun errorMessage(context: Context, errorCode: Int): String {

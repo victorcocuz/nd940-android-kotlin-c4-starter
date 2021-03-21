@@ -97,7 +97,7 @@ class SaveReminderFragment : BaseFragment() {
     private fun addGeofence(id: String) {
         val geofence = Geofence.Builder()
             .setRequestId(id)
-            .setCircularRegion(_viewModel.latitude.value!!, _viewModel.longitude.value!!, 15f)
+            .setCircularRegion(_viewModel.latitude.value!!, _viewModel.longitude.value!!, 100f)
             .setExpirationDuration(100000000)
             .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_ENTER)
             .build()
